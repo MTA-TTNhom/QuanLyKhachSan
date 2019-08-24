@@ -39,6 +39,16 @@
             this.btnthemphong = new System.Windows.Forms.Button();
             this.btnsuaphong = new System.Windows.Forms.Button();
             this.btnxoaphong = new System.Windows.Forms.Button();
+            this.btnluuphong = new System.Windows.Forms.Button();
+            this.btnthoatphong = new System.Windows.Forms.Button();
+            this.cbloaiphong = new System.Windows.Forms.ComboBox();
+            this.GridView = new System.Windows.Forms.DataGridView();
+            this.maPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
+            this.SuspendLayout();
         }
 
         #endregion
