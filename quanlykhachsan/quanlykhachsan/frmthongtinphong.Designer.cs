@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtphong = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtdongiaphong = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbtinhtrang = new System.Windows.Forms.ComboBox();
+            this.btnthemphong = new System.Windows.Forms.Button();
+            this.btnsuaphong = new System.Windows.Forms.Button();
+            this.btnxoaphong = new System.Windows.Forms.Button();
         }
 
         #endregion
