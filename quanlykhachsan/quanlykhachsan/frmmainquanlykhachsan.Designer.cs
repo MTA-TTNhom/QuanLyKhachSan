@@ -43,7 +43,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.trangChủToolStripMenuItem,
             this.quảnLýPhòngToolStripMenuItem,
-            this.quảnLýThôngTinKháchHàngToolStripMenuItem});
+            this.quảnLýThôngTinKháchHàngToolStripMenuItem,
+            this.quảnLýNhânViênToolStripMenuItem,
+            this.báoCáoThốngKêToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 4, 0, 4);
@@ -57,7 +59,7 @@
             this.quảnLýPhòngToolStripMenuItem.Name = "quảnLýPhòngToolStripMenuItem";
             this.quảnLýPhòngToolStripMenuItem.Size = new System.Drawing.Size(99, 21);
             this.quảnLýPhòngToolStripMenuItem.Text = "Quản lý phòng";
-  
+           
             // 
             // quảnLýThôngTinKháchHàngToolStripMenuItem
             // 
@@ -65,15 +67,30 @@
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Name = "quảnLýThôngTinKháchHàngToolStripMenuItem";
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(103, 21);
             this.quảnLýThôngTinKháchHàngToolStripMenuItem.Text = "QL  khách hàng";
-      
 
+            // 
+            // quảnLýNhânViênToolStripMenuItem
+            // 
+            this.quảnLýNhânViênToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(117, 21);
+            this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
+   
+            // 
+            // báoCáoThốngKêToolStripMenuItem
+            // 
+            this.báoCáoThốngKêToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.báoCáoThốngKêToolStripMenuItem.Name = "báoCáoThốngKêToolStripMenuItem";
+            this.báoCáoThốngKêToolStripMenuItem.Size = new System.Drawing.Size(115, 21);
+            this.báoCáoThốngKêToolStripMenuItem.Text = "Báo cáo, thống kê";
+     
             // 
             // trangChủToolStripMenuItem
             // 
             this.trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
             this.trangChủToolStripMenuItem.Size = new System.Drawing.Size(78, 21);
             this.trangChủToolStripMenuItem.Text = "Trang chủ";
-
+         
             // 
             // frmmainquanlykhachsan
             // 
@@ -88,7 +105,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lý Khách Sạn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
+     
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
