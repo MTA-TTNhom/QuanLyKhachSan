@@ -90,6 +90,48 @@
             this.label2.Size = new System.Drawing.Size(84, 19);
             this.label2.TabIndex = 40;
             this.label2.Text = "Loại phòng :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(454, 274);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 19);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Tình trạng phòng :";
+            // 
+            // txtdongiaphong
+            // 
+            this.txtdongiaphong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtdongiaphong.Location = new System.Drawing.Point(588, 334);
+            this.txtdongiaphong.Name = "txtdongiaphong";
+            this.txtdongiaphong.Size = new System.Drawing.Size(159, 26);
+            this.txtdongiaphong.TabIndex = 45;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(454, 336);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 19);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "Đơn giá :";
+            // 
+            // cbtinhtrang
+            // 
+            this.cbtinhtrang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbtinhtrang.FormattingEnabled = true;
+            this.cbtinhtrang.Items.AddRange(new object[] {
+            "Rỗi",
+            "Bận"});
+            this.cbtinhtrang.Location = new System.Drawing.Point(588, 274);
+            this.cbtinhtrang.Name = "cbtinhtrang";
+            this.cbtinhtrang.Size = new System.Drawing.Size(159, 27);
+            this.cbtinhtrang.TabIndex = 46;
         }
 
         #endregion
