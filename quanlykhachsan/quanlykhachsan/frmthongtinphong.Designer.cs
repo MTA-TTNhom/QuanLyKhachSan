@@ -60,6 +60,36 @@
             this.label5.Size = new System.Drawing.Size(277, 31);
             this.label5.TabIndex = 13;
             this.label5.Text = "THÔNG TIN PHÒNG";
+            // 
+            // txtphong
+            // 
+            this.txtphong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtphong.Location = new System.Drawing.Point(188, 272);
+            this.txtphong.Name = "txtphong";
+            this.txtphong.Size = new System.Drawing.Size(159, 26);
+            this.txtphong.TabIndex = 39;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(54, 274);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Phòng :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(54, 336);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 19);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Loại phòng :";
         }
 
         #endregion
