@@ -132,6 +132,37 @@
             this.cbtinhtrang.Name = "cbtinhtrang";
             this.cbtinhtrang.Size = new System.Drawing.Size(159, 27);
             this.cbtinhtrang.TabIndex = 46;
+            // 
+            // btnthemphong
+            // 
+            this.btnthemphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnthemphong.Location = new System.Drawing.Point(124, 398);
+            this.btnthemphong.Name = "btnthemphong";
+            this.btnthemphong.Size = new System.Drawing.Size(73, 31);
+            this.btnthemphong.TabIndex = 47;
+            this.btnthemphong.Text = "Thêm";
+            this.btnthemphong.UseVisualStyleBackColor = true;
+            this.btnthemphong.Click += new System.EventHandler(this.btnthemphong_Click);
+            // 
+            // btnsuaphong
+            // 
+            this.btnsuaphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnsuaphong.Location = new System.Drawing.Point(251, 398);
+            this.btnsuaphong.Name = "btnsuaphong";
+            this.btnsuaphong.Size = new System.Drawing.Size(73, 31);
+            this.btnsuaphong.TabIndex = 48;
+            this.btnsuaphong.Text = "Sửa";
+            this.btnsuaphong.UseVisualStyleBackColor = true;
+            // 
+            // btnxoaphong
+            // 
+            this.btnxoaphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnxoaphong.Location = new System.Drawing.Point(373, 398);
+            this.btnxoaphong.Name = "btnxoaphong";
+            this.btnxoaphong.Size = new System.Drawing.Size(73, 31);
+            this.btnxoaphong.TabIndex = 49;
+            this.btnxoaphong.Text = "Xóa";
+            this.btnxoaphong.UseVisualStyleBackColor = true;
         }
 
         #endregion
