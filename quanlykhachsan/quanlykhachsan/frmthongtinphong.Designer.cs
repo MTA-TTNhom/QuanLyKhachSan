@@ -226,8 +226,69 @@
             this.loaiPhong.HeaderText = "Loại Phòng";
             this.loaiPhong.Name = "loaiPhong";
             this.loaiPhong.ReadOnly = true;
+            // 
+            // tinhTrang
+            // 
+            this.tinhTrang.DataPropertyName = "tinhTrang";
+            this.tinhTrang.HeaderText = "Tình Trạng";
+            this.tinhTrang.Name = "tinhTrang";
+            this.tinhTrang.ReadOnly = true;
+            // 
+            // donGia
+            // 
+            this.donGia.DataPropertyName = "donGia";
+            this.donGia.HeaderText = "Đơn Giá";
+            this.donGia.Name = "donGia";
+            this.donGia.ReadOnly = true;
+            // 
+            // frmthongtinphong
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(838, 461);
+            this.Controls.Add(this.GridView);
+            this.Controls.Add(this.cbloaiphong);
+            this.Controls.Add(this.btnthoatphong);
+            this.Controls.Add(this.btnluuphong);
+            this.Controls.Add(this.btnxoaphong);
+            this.Controls.Add(this.btnsuaphong);
+            this.Controls.Add(this.btnthemphong);
+            this.Controls.Add(this.cbtinhtrang);
+            this.Controls.Add(this.txtdongiaphong);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtphong);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label5);
+            this.Name = "frmthongtinphong";
+            this.Text = "frmthongtinphong";
+            this.Load += new System.EventHandler(this.frm_load);
+            ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtphong;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtdongiaphong;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbtinhtrang;
+        private System.Windows.Forms.Button btnthemphong;
+        private System.Windows.Forms.Button btnsuaphong;
+        private System.Windows.Forms.Button btnxoaphong;
+        private System.Windows.Forms.Button btnluuphong;
+        private System.Windows.Forms.Button btnthoatphong;
+        private System.Windows.Forms.ComboBox cbloaiphong;
+        private System.Windows.Forms.DataGridView GridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaiPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tinhTrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
     }
 }
