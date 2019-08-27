@@ -67,6 +67,31 @@
             this.loaiPhong.HeaderText = "Loại Phòng";
             this.loaiPhong.Name = "loaiPhong";
             this.loaiPhong.ReadOnly = true;
+            // 
+            // tinhTrang
+            // 
+            this.tinhTrang.DataPropertyName = "tinhTrang";
+            this.tinhTrang.HeaderText = "Tình Trạng";
+            this.tinhTrang.Name = "tinhTrang";
+            this.tinhTrang.ReadOnly = true;
+            // 
+            // donGia
+            // 
+            this.donGia.DataPropertyName = "donGia";
+            this.donGia.HeaderText = "Đơn Giá";
+            this.donGia.Name = "donGia";
+            this.donGia.ReadOnly = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(264, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(277, 31);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "THÔNG TIN PHÒNG";
         }
 
         #endregion
