@@ -120,15 +120,6 @@
     <EmbeddedResource Include="frmmain.resx">
       <DependentUpon>frmmain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmnhanvien.resx">
-      <DependentUpon>frmnhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmthongtinphong.resx">
-      <DependentUpon>frmthongtinphong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmthongtinpphongkh.resx">
-      <DependentUpon>frmthongtinpphongkh.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
