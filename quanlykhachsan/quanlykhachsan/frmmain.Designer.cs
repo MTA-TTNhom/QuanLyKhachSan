@@ -923,7 +923,6 @@
             this.Controls.Add(this.Tabphong);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frm_load);
             this.Tabphong.ResumeLayout(false);
             this.tpDanhSanh.ResumeLayout(false);
             this.tpDanhSanh.PerformLayout();
