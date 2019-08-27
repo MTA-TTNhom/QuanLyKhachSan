@@ -163,6 +163,69 @@
             this.btnxoaphong.TabIndex = 49;
             this.btnxoaphong.Text = "Xóa";
             this.btnxoaphong.UseVisualStyleBackColor = true;
+            // 
+            // btnluuphong
+            // 
+            this.btnluuphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnluuphong.Location = new System.Drawing.Point(510, 398);
+            this.btnluuphong.Name = "btnluuphong";
+            this.btnluuphong.Size = new System.Drawing.Size(73, 31);
+            this.btnluuphong.TabIndex = 50;
+            this.btnluuphong.Text = "Lưu";
+            this.btnluuphong.UseVisualStyleBackColor = true;
+            // 
+            // btnthoatphong
+            // 
+            this.btnthoatphong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnthoatphong.Location = new System.Drawing.Point(642, 398);
+            this.btnthoatphong.Name = "btnthoatphong";
+            this.btnthoatphong.Size = new System.Drawing.Size(73, 31);
+            this.btnthoatphong.TabIndex = 51;
+            this.btnthoatphong.Text = "Thoát";
+            this.btnthoatphong.UseVisualStyleBackColor = true;
+            // 
+            // cbloaiphong
+            // 
+            this.cbloaiphong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbloaiphong.FormattingEnabled = true;
+            this.cbloaiphong.Items.AddRange(new object[] {
+            "Thường",
+            "Trung",
+            "Vip"});
+            this.cbloaiphong.Location = new System.Drawing.Point(188, 333);
+            this.cbloaiphong.Name = "cbloaiphong";
+            this.cbloaiphong.Size = new System.Drawing.Size(159, 27);
+            this.cbloaiphong.TabIndex = 52;
+            // 
+            // GridView
+            // 
+            this.GridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maPhong,
+            this.loaiPhong,
+            this.tinhTrang,
+            this.donGia});
+            this.GridView.Location = new System.Drawing.Point(33, 60);
+            this.GridView.Name = "GridView";
+            this.GridView.ReadOnly = true;
+            this.GridView.Size = new System.Drawing.Size(772, 177);
+            this.GridView.TabIndex = 53;
+            this.GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // maPhong
+            // 
+            this.maPhong.DataPropertyName = "maPhong";
+            this.maPhong.HeaderText = "Phòng";
+            this.maPhong.Name = "maPhong";
+            this.maPhong.ReadOnly = true;
+            // 
+            // loaiPhong
+            // 
+            this.loaiPhong.DataPropertyName = "loaiPhong";
+            this.loaiPhong.HeaderText = "Loại Phòng";
+            this.loaiPhong.Name = "loaiPhong";
+            this.loaiPhong.ReadOnly = true;
         }
 
         #endregion
