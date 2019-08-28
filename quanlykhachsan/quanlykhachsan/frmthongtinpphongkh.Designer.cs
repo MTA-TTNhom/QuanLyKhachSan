@@ -133,5 +133,14 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaiPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tinhTrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button thoat;
     }
 }
