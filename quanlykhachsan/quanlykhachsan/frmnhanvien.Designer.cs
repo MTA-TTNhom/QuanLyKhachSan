@@ -72,6 +72,76 @@
             this.label9.Size = new System.Drawing.Size(76, 19);
             this.label9.TabIndex = 45;
             this.label9.Text = "Ngày sinh :";
+            // 
+            // txtsdt
+            // 
+            this.txtsdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtsdt.Location = new System.Drawing.Point(571, 350);
+            this.txtsdt.Name = "txtsdt";
+            this.txtsdt.Size = new System.Drawing.Size(159, 26);
+            this.txtsdt.TabIndex = 41;
+            // 
+            // txtdiachi
+            // 
+            this.txtdiachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtdiachi.Location = new System.Drawing.Point(571, 313);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Size = new System.Drawing.Size(159, 26);
+            this.txtdiachi.TabIndex = 40;
+            // 
+            // txtscm
+            // 
+            this.txtscm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtscm.Location = new System.Drawing.Point(571, 265);
+            this.txtscm.Name = "txtscm";
+            this.txtscm.Size = new System.Drawing.Size(159, 26);
+            this.txtscm.TabIndex = 39;
+            // 
+            // txttennv
+            // 
+            this.txttennv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txttennv.Location = new System.Drawing.Point(222, 313);
+            this.txttennv.Name = "txttennv";
+            this.txttennv.Size = new System.Drawing.Size(159, 26);
+            this.txttennv.TabIndex = 38;
+            // 
+            // txtmanv
+            // 
+            this.txtmanv.Enabled = false;
+            this.txtmanv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtmanv.Location = new System.Drawing.Point(222, 265);
+            this.txtmanv.Name = "txtmanv";
+            this.txtmanv.Size = new System.Drawing.Size(159, 26);
+            this.txtmanv.TabIndex = 37;
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Location = new System.Drawing.Point(652, 443);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(78, 37);
+            this.btnthoat.TabIndex = 35;
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
+            // 
+            // btnluu
+            // 
+            this.btnluu.Location = new System.Drawing.Point(407, 443);
+            this.btnluu.Name = "btnluu";
+            this.btnluu.Size = new System.Drawing.Size(78, 37);
+            this.btnluu.TabIndex = 34;
+            this.btnluu.Text = "&Lưu";
+            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Location = new System.Drawing.Point(286, 443);
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(78, 37);
+            this.btnxoa.TabIndex = 33;
+            this.btnxoa.Text = "&Xóa";
+            this.btnxoa.UseVisualStyleBackColor = true;
         }
 
         #endregion
