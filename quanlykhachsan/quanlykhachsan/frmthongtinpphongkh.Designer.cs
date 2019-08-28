@@ -92,6 +92,44 @@
             this.label5.Size = new System.Drawing.Size(277, 31);
             this.label5.TabIndex = 15;
             this.label5.Text = "THÔNG TIN PHÒNG";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Location = new System.Drawing.Point(189, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 40);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Đăng xuất";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // thoat
+            // 
+            this.thoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.thoat.Location = new System.Drawing.Point(448, 442);
+            this.thoat.Name = "thoat";
+            this.thoat.Size = new System.Drawing.Size(102, 40);
+            this.thoat.TabIndex = 18;
+            this.thoat.Text = "Thoát";
+            this.thoat.UseVisualStyleBackColor = true;
+            this.thoat.Click += new System.EventHandler(this.thoat_Click);
+            // 
+            // frmthongtinpphongkh
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(772, 494);
+            this.Controls.Add(this.thoat);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label5);
+            this.Name = "frmthongtinpphongkh";
+            this.Text = "frmthongtinpphongkh";
+            this.Load += new System.EventHandler(this.frm_load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
