@@ -213,4 +213,45 @@ this.btnLogin.Image = global::QuanLyKhachSan.Properties.Resources.login;
             // 
             // txtUser
             // 
+             this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(62)))), ((int)(((byte)(63)))));
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtUser.Font = new System.Drawing.Font("Calibri", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtUser.Location = new System.Drawing.Point(160, 108);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(268, 41);
+            this.txtUser.TabIndex = 0;
+            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_KeyDown);
+            // 
+            // frmLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::QuanLyKhachSan.Properties.Resources.admin_login;
+            this.ClientSize = new System.Drawing.Size(620, 350);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.btnLogin);
+            this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(636, 389);
+            this.MinimumSize = new System.Drawing.Size(636, 389);
+            this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+}
+
+#endregion
+
+private System.Windows.Forms.Button btnLogin;
+internal System.Windows.Forms.TextBox txtPass;
+internal System.Windows.Forms.TextBox txtUser;
 
