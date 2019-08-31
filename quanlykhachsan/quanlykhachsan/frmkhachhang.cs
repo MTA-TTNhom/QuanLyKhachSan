@@ -82,7 +82,7 @@ namespace quanlykhachsan
 
         private void btnluu_Click(object sender, EventArgs e)
         {
-            khachhangBLL khBLL = new khachhangBLL(); 
+                khachhangBLL khBLL = new khachhangBLL(); 
             if (temp == 2)
             {
                 khBLL.sua_khachhang(txttenkh.Text, dtngaysinh.Value, travegioitinh(), txtcmt.Text, txtdiachi.Text, txtsdt.Text, cbquoctich.Text, int.Parse(txtmakhachhang.Text));
