@@ -60,19 +60,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.txtTPPhong = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtTPTenKH = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtTPSoCMND = new System.Windows.Forms.TextBox();
-            this.txtTPSoDT = new System.Windows.Forms.TextBox();
-            this.txtTPDiaChi = new System.Windows.Forms.TextBox();
-            this.TPTinhTien = new System.Windows.Forms.Button();
-            this.Tabphong.SuspendLayout();
-            this.tpDanhSanh.SuspendLayout();
+    
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachphong)).BeginInit();
             this.tpThuePhong.SuspendLayout();
             this.groupBox5.SuspendLayout();
