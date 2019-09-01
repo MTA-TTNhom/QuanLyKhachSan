@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F2A8ECA-4980-4AD2-B222-E965D02071B1}</ProjectGuid>
+    <ProjectGuid>{01A155A5-9F66-4260-BFAD-37A167751B96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>quanlykhachsan</RootNamespace>
