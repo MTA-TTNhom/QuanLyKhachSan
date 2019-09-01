@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.Tabphong = new System.Windows.Forms.TabControl();
             this.tpDanhSanh = new System.Windows.Forms.TabPage();
             this.dtgvDanhSachphong = new System.Windows.Forms.DataGridView();
@@ -129,10 +128,129 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgtraphong)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.SuspendLayout();
-
-
-
-            
+            // 
+            // Tabphong
+            // 
+            this.Tabphong.Controls.Add(this.tpDanhSanh);
+            this.Tabphong.Controls.Add(this.tpThuePhong);
+            this.Tabphong.Controls.Add(this.tpTimKiem);
+            this.Tabphong.Controls.Add(this.tpTraPhong);
+            this.Tabphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Tabphong.Location = new System.Drawing.Point(12, 12);
+            this.Tabphong.Name = "Tabphong";
+            this.Tabphong.SelectedIndex = 0;
+            this.Tabphong.Size = new System.Drawing.Size(1010, 597);
+            this.Tabphong.TabIndex = 0;
+            this.Tabphong.Click += new System.EventHandler(this.Tabphong_Click);
+            // 
+            // tpDanhSanh
+            // 
+            this.tpDanhSanh.AccessibleName = "";
+            this.tpDanhSanh.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.tpDanhSanh.Controls.Add(this.dtgvDanhSachphong);
+            this.tpDanhSanh.Controls.Add(this.btndangxuat);
+            this.tpDanhSanh.Controls.Add(this.label2);
+            this.tpDanhSanh.Location = new System.Drawing.Point(4, 25);
+            this.tpDanhSanh.Name = "tpDanhSanh";
+            this.tpDanhSanh.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDanhSanh.Size = new System.Drawing.Size(1002, 568);
+            this.tpDanhSanh.TabIndex = 0;
+            this.tpDanhSanh.Text = "Danh Sách";
+            this.tpDanhSanh.UseVisualStyleBackColor = true;
+            // 
+            // dtgvDanhSachphong
+            // 
+            this.dtgvDanhSachphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDanhSachphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhSachphong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maPhong,
+            this.loaiPhong,
+            this.tinhTrang,
+            this.donGia});
+            this.dtgvDanhSachphong.Location = new System.Drawing.Point(3, 52);
+            this.dtgvDanhSachphong.MultiSelect = false;
+            this.dtgvDanhSachphong.Name = "dtgvDanhSachphong";
+            this.dtgvDanhSachphong.ReadOnly = true;
+            this.dtgvDanhSachphong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvDanhSachphong.Size = new System.Drawing.Size(974, 331);
+            this.dtgvDanhSachphong.TabIndex = 1;
+            // 
+            // maPhong
+            // 
+            this.maPhong.DataPropertyName = "maPhong";
+            this.maPhong.HeaderText = "Phòng";
+            this.maPhong.Name = "maPhong";
+            this.maPhong.ReadOnly = true;
+            // 
+            // loaiPhong
+            // 
+            this.loaiPhong.DataPropertyName = "loaiPhong";
+            this.loaiPhong.HeaderText = "Loại Phòng";
+            this.loaiPhong.Name = "loaiPhong";
+            this.loaiPhong.ReadOnly = true;
+            // 
+            // tinhTrang
+            // 
+            this.tinhTrang.DataPropertyName = "tinhTrang";
+            this.tinhTrang.HeaderText = "Tình trạng";
+            this.tinhTrang.Name = "tinhTrang";
+            this.tinhTrang.ReadOnly = true;
+            // 
+            // donGia
+            // 
+            this.donGia.DataPropertyName = "donGia";
+            this.donGia.HeaderText = "Đơn Giá";
+            this.donGia.Name = "donGia";
+            this.donGia.ReadOnly = true;
+            // 
+            // btndangxuat
+            // 
+            this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btndangxuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btndangxuat.Location = new System.Drawing.Point(853, 20);
+            this.btndangxuat.Name = "btndangxuat";
+            this.btndangxuat.Size = new System.Drawing.Size(109, 26);
+            this.btndangxuat.TabIndex = 2;
+            this.btndangxuat.Text = "Đăng xuất";
+            this.btndangxuat.UseVisualStyleBackColor = false;
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.Fuchsia;
+            this.label2.Location = new System.Drawing.Point(267, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(426, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "DANH SÁCH PHÒNG TRONG KHÁCH SẠN";
+            // 
+            // tpThuePhong
+            // 
+            this.tpThuePhong.Controls.Add(this.bHuyBo);
+            this.tpThuePhong.Controls.Add(this.btThuePhongOK);
+            this.tpThuePhong.Controls.Add(this.groupBox5);
+            this.tpThuePhong.Location = new System.Drawing.Point(4, 25);
+            this.tpThuePhong.Name = "tpThuePhong";
+            this.tpThuePhong.Padding = new System.Windows.Forms.Padding(3);
+            this.tpThuePhong.Size = new System.Drawing.Size(1002, 568);
+            this.tpThuePhong.TabIndex = 1;
+            this.tpThuePhong.Text = "Thuê Phòng";
+            this.tpThuePhong.UseVisualStyleBackColor = true;
+            // 
+            // bHuyBo
+            // 
+            this.bHuyBo.Location = new System.Drawing.Point(504, 462);
+            this.bHuyBo.Name = "bHuyBo";
+            this.bHuyBo.Size = new System.Drawing.Size(115, 38);
+            this.bHuyBo.TabIndex = 24;
+            this.bHuyBo.Text = "Hủy bỏ";
+            this.bHuyBo.UseVisualStyleBackColor = true;
+            this.bHuyBo.Click += new System.EventHandler(this.bHuyBo_Click);
+            // 
+            // btThuePhongOK
+            // 
             this.btThuePhongOK.Location = new System.Drawing.Point(277, 462);
             this.btThuePhongOK.Name = "btThuePhongOK";
             this.btThuePhongOK.Size = new System.Drawing.Size(115, 38);

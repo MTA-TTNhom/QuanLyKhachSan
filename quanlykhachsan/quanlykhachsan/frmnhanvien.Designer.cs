@@ -19,7 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -122,7 +121,7 @@
             this.btnthoat.TabIndex = 35;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
-         
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnluu
             // 
@@ -132,7 +131,7 @@
             this.btnluu.TabIndex = 34;
             this.btnluu.Text = "&Lưu";
             this.btnluu.UseVisualStyleBackColor = true;
-        
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnxoa
             // 
@@ -142,6 +141,7 @@
             this.btnxoa.TabIndex = 33;
             this.btnxoa.Text = "&Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
@@ -151,7 +151,7 @@
             this.btnsua.TabIndex = 32;
             this.btnsua.Text = "&Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
-          
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // label7
             // 
@@ -230,7 +230,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(760, 177);
             this.dataGridView1.TabIndex = 24;
-          
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label5
             // 
@@ -261,7 +261,7 @@
             this.btnthem.TabIndex = 49;
             this.btnthem.Text = "&Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
-
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // cbgioitinh
             // 
@@ -304,7 +304,7 @@
             this.btnhuy.TabIndex = 53;
             this.btnhuy.Text = "&Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
- 
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // maNhanVien
             // 
@@ -393,7 +393,7 @@
             this.Controls.Add(this.label5);
             this.Name = "frmnhanvien";
             this.Text = "nhanvien";
-  
+            this.Load += new System.EventHandler(this.frm_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -433,5 +433,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayVaoLam;
+
     }
 }
