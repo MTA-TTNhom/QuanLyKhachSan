@@ -33,6 +33,5 @@ namespace quanlykhachsan
             this.Hide();
             frmdangnhap frm = new frmdangnhap();
             frm.Show();
-
         }
     }
