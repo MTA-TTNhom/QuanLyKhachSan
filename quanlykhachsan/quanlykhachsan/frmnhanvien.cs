@@ -53,5 +53,38 @@ namespace quanlykhachsan
             dtngaysinh.Value = Convert.ToDateTime(row.Cells["ngaySinh"].Value.ToString());
             dtngayvaolam.Value = Convert.ToDateTime(row.Cells["ngayVaoLam"].Value.ToString());
         }
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+            trangthai(true);
+            temp = 1;
+            txtmanv.Clear();
+            txttennv.Clear();
+            txtsdt.Clear();
+            txtscm.Clear();
+            txtdiachi.Clear();
+            cbgioitinh.ResetText();
+            dtngaysinh.ResetText();
+            dtngayvaolam.ResetText();
+            btnluu.Enabled = true;
+            btnsua.Enabled = false;
+            btnxoa.Enabled = false;
+            btnhuy.Enabled = true;
+        }
+        private void btnsua_Click(object sender, EventArgs e)
+        {
+            trangthai(true);
+            temp = 2;
+            btnluu.Enabled = true;
+            btnthem.Enabled = false;
+            btnxoa.Enabled = false;
+            btnhuy.Enabled = true;
+        }
+        private bool travegioitinh()
+        {
+            if (cbgioitinh.Text == "Nam")
+                return true;
+            else
+                return false;
+        }
     }
 }
