@@ -81,3 +81,54 @@ namespace DAL
 
     }
 }
+
+DataService ds = new DataService();
+public DataTable LayMaPhong()
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG");
+    ds.Load(cmd);
+    return ds;
+}
+
+public DataTable LayMaPhong(string id)
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG WHERE MaPhong = @id");
+    cmd.Parameters.Add("id", SqlDbType.VarChar, 3).Value = id;
+    ds.Load(cmd);
+    return ds;
+}
+//Download source code tai Sharecode.vn
+public DataTable LayMaTinhTrangPhong(int id)
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG WHERE MaLoaiTinhTrangPhong = @id");
+    cmd.Parameters.Add("id", SqlDbType.VarChar, 10).Value = id;
+    ds.Load(cmd);
+    return ds;
+}
+
+public DataTable LayDSMaTinhTrangPhong()
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG WHERE MaLoaiTinhTrangPhong");
+    //cmd.Parameters.Add("id", SqlDbType.VarChar, 10).Value = id;
+    ds.Load(cmd);
+    return ds;
+}
+
+public DataTable LayMaLoaiPhong()
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG WHERE MaLoaiPhong");
+    //cmd.Parameters.Add("id", SqlDbType.VarChar, 10).Value = id;
+    ds.Load(cmd);
+    return ds;
+}
+
+
+public static void CapNhatMaLoaiTinhTrangPhong(String maphong, int id)
+{
+    DataService ds = new DataService();
+    SqlCommand cmd = new SqlCommand("UPDATE PHONG SET MaLoaiTinhTrangPhong = @so WHERE MaPhong = @id");
+    cmd.Parameters.Add("so", SqlDbType.Int).Value = id;
+    cmd.Parameters.Add("id", SqlDbType.VarChar).Value = maphong;
+    ds.ExecuteNoneQuery(cmd);
+}
+
