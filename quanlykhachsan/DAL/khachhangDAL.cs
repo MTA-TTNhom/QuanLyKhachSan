@@ -253,3 +253,19 @@ public bool Save()
 {
     return (ds.ExecuteNoneQuery() > 0);
 }
+public DataTable LayMaTinhTrangPhong(int id)
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG WHERE MaLoaiTinhTrangPhong = @id");
+    cmd.Parameters.Add("id", SqlDbType.VarChar, 10).Value = id;
+    ds.Load(cmd);
+    return ds;
+}
+
+public DataTable LayDSMaTinhTrangPhong()
+{
+    SqlCommand cmd = new SqlCommand("select * from PHONG WHERE MaLoaiTinhTrangPhong");
+    //cmd.Parameters.Add("id", SqlDbType.VarChar, 10).Value = id;
+    ds.Load(cmd);
+    return ds;
+}
+
