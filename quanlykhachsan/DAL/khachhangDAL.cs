@@ -131,4 +131,47 @@ public static void CapNhatMaLoaiTinhTrangPhong(String maphong, int id)
     cmd.Parameters.Add("id", SqlDbType.VarChar).Value = maphong;
     ds.ExecuteNoneQuery(cmd);
 }
+public static void CapNhatMaLoaiTinhTrangPhong(String maphong, int id)
+{
+    DataService ds = new DataService();
+    SqlCommand cmd = new SqlCommand("UPDATE PHONG SET MaLoaiTinhTrangPhong = @so WHERE MaPhong = @id");
+    cmd.Parameters.Add("so", SqlDbType.Int).Value = id;
+    cmd.Parameters.Add("id", SqlDbType.VarChar).Value = maphong;
+    ds.ExecuteNoneQuery(cmd);
+}
 
+
+
+public DataTable TimMaLoaiPhong(string maloaiphong)
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM PHONG WHERE MaLoaiPhong = @maloaiphong ");
+    cmd.Parameters.Add("maloaiphong", SqlDbType.VarChar).Value = maloaiphong;
+    ds.Load(cmd);
+
+    return ds;
+}
+
+public DataTable TimTinhTrangPhong(string tinhtrangphong)
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM PHONG WHERE MaLoaiTinhTrangPhong=@tinhtrangphong ");
+    cmd.Parameters.Add("tinhtrangphong", SqlDbType.VarChar).Value = tinhtrangphong;
+    ds.Load(cmd);
+
+    return ds;
+}
+
+
+public DataRow NewRow()
+{
+    return ds.NewRow();
+}
+
+public void Add(DataRow row)
+{
+    ds.Rows.Add(row);
+}
+
+public bool Save()
+{
+    return (ds.ExecuteNoneQuery() > 0);
+}
