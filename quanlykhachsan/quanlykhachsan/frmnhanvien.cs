@@ -86,5 +86,31 @@ namespace quanlykhachsan
             else
                 return false;
         }
+        private void btnluu_Click(object sender, EventArgs e)
+        {
+            trangthai(false);
+            if (temp == 1)
+            {
+                nhanvienBLL nvBLL = new nhanvienBLL();
+                nvBLL.them_nhanvien(txttennv.Text, travegioitinh(), dtngaysinh.Value, txtscm.Text, txtdiachi.Text, txtsdt.Text, dtngayvaolam.Value);
+                hienthi();
+            }
+            else
+            {
+                nhanvienBLL nvBLL = new nhanvienBLL();
+                nvBLL.sua_nhanvien(txttennv.Text, travegioitinh(), dtngaysinh.Value, txtscm.Text, txtdiachi.Text, txtsdt.Text, dtngayvaolam.Value, int.Parse(txtmanv.Text));
+                hienthi();
+            }
+            btnluu.Enabled = false;
+            btnhuy.Enabled = false;
+            btnsua.Enabled = true;
+            btnthem.Enabled = true;
+            btnxoa.Enabled = true;
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
