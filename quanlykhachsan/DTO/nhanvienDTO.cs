@@ -59,3 +59,20 @@ namespace DTO
         }
     }
 }
+
+DataService ds = new DataService();
+public DataTable LayMaThietBi()
+{
+    SqlCommand cmd = new SqlCommand("select * from THIET_BI");
+    ds.Load(cmd);
+    return ds;
+}
+
+public DataTable TimMaLoaiPhong(string cmbmaloaiphong)
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM THIET_BI WHERE MaLoaiPhong = @maloaiphong");
+    cmd.Parameters.Add("maloaiphong", SqlDbType.VarChar).Value = cmbmaloaiphong;
+
+    ds.Load(cmd);
+    return ds;
+}
