@@ -44,5 +44,17 @@ namespace DAL
             cnn.Close();
             return dt;
         }
+        public void tinhtien(DateTime ngayDi, float thanhTien, int maThuePhong, int maPhong)
+        {
+            SqlConnection cnn = ketnoi.Get();
+            SqlCommand cmd = new SqlCommand("tinhtien ", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("ngayDi", ngayDi);
+            cmd.Parameters.AddWithValue("thanhTien", thanhTien);
+            cmd.Parameters.AddWithValue("maThuePhong", maThuePhong);
+            cmd.Parameters.AddWithValue("maPhong", maPhong);
+            int i = cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
     }
 }
