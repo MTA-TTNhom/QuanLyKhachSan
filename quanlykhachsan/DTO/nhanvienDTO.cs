@@ -76,3 +76,38 @@ public DataTable TimMaLoaiPhong(string cmbmaloaiphong)
     ds.Load(cmd);
     return ds;
 }
+
+DataService ds = new DataService();
+
+public void LoadSchema()
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM PHIEU_THUE_PHONG WHERE MaPhieuThue='-1'");
+    ds.Load(cmd);
+
+}
+
+public DataTable DanhSachPhieudangKy()
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM PHIEU_THUE_PHONG");
+    ds.Load(cmd);
+
+    return ds;
+}
+
+public DataTable TimPhieuThue(string cmnd)
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM PHIEU_THUE_PHONG WHERE MaPhieuThue =@cmnd");
+    cmd.Parameters.Add("cmnd", SqlDbType.VarChar).Value = cmnd;
+    ds.Load(cmd);
+
+    return ds;
+}
+
+public DataTable TimKhachHang(string cmnd)
+{
+    SqlCommand cmd = new SqlCommand("SELECT * FROM PHIEU_THUE_PHONG WHERE MaKhachHang =@cmnd");
+    cmd.Parameters.Add("cmnd", SqlDbType.VarChar).Value = cmnd;
+    ds.Load(cmd);
+
+    return ds;
+}
