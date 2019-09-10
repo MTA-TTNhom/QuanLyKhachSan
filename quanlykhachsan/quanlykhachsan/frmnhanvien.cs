@@ -112,5 +112,25 @@ namespace quanlykhachsan
         {
             Close();
         }
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+            nhanvienBLL nvBLL = new nhanvienBLL();
+            DialogResult luu = MessageBox.Show("Bạn chắc chắn xóa??", "Thông báo thêm mới", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (luu == DialogResult.Yes)
+            {
+                nvBLL.xoa_nhanvien(int.Parse(txtmanv.Text));
+                hienthi();
+            }
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            btnluu.Enabled = false;
+            btnsua.Enabled = true;
+            btnthem.Enabled = true;
+            btnxoa.Enabled = true;
+            trangthai(false);
+
+        }
     }
 }
