@@ -48,7 +48,6 @@ namespace quanlykhachsan
         private void btnthemphong_Click(object sender, EventArgs e)
         {
             trangthai(true);
-            
         }
     }
 }

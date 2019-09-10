@@ -88,6 +88,12 @@
     <Compile Include="frmnhanvien.Designer.cs">
       <DependentUpon>frmnhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmtest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtest.Designer.cs">
+      <DependentUpon>frmtest.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmthongtinphong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmmain.resx">
       <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtest.resx">
+      <DependentUpon>frmtest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
