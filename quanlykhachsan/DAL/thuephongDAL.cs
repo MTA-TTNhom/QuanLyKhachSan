@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DAL
 {
-    class thuephongDAL
+    public class thuephongDAL
     {
         public bool them_thuephong(int maKhachHang, DateTime ngayDen, int maPhong)
         {
@@ -58,3 +60,4 @@ namespace DAL
         }
     }
 }
+
