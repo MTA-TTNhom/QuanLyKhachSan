@@ -9,7 +9,11 @@ namespace DTO
     public class khachhangDTO
     {
         
-        
+        public string chungMinhNhanDan
+        {
+            get { return _chungMinhNhanDan; }
+            set { _chungMinhNhanDan = value; }
+        }
         public string diaChi
         {
             get { return _diaChi; }
