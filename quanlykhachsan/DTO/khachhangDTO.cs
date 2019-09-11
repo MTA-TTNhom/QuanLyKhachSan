@@ -10,7 +10,11 @@ namespace DTO
     {
         
 
-        
+        public int maKhachHang
+        {
+            get { return _maKhachHang; }
+            set { _maKhachHang = value; }
+        }
         public string tenKhachHang
         {
             get { return _tenKhachHang; }
