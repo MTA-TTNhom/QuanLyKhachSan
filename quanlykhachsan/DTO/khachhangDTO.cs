@@ -8,14 +8,7 @@ namespace DTO
 {
     public class khachhangDTO
     {
-        private int _maKhachHang;
-        private string _tenKhachHang;
-        private bool _gioiTinh;
-        private DateTime _ngaySinh;
-        private string _chungMinhNhanDan;
-        private string _diaChi;
-        private string _soDienThoai;
-        private string _quocTich;
+        
 
         public int maKhachHang
         {
