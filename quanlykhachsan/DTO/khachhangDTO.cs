@@ -8,6 +8,11 @@ namespace DTO
 {
     public class khachhangDTO
     {
+        public string soDienThoai
+        {
+            get { return _soDienThoai; }
+            set { _soDienThoai = value; }
+        }
         public String quocTich
         {
             get { return _quocTich; }
