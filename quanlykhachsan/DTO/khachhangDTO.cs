@@ -11,7 +11,11 @@ namespace DTO
         
 
         
-        
+        public string tenKhachHang
+        {
+            get { return _tenKhachHang; }
+            set { _tenKhachHang = value; }
+        }
         public bool gioiTinh
         {
             get { return _gioiTinh; }
