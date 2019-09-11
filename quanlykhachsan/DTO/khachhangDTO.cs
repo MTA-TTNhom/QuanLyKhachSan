@@ -8,15 +8,6 @@ namespace DTO
 {
     public class khachhangDTO
     {
-        
-
-        
-        
-        public bool gioiTinh
-        {
-            get { return _gioiTinh; }
-            set { _gioiTinh = value; }
-        }
         public DateTime ngaySinh
         {
             get { return _ngaySinh; }
