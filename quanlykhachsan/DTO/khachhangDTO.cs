@@ -8,11 +8,7 @@ namespace DTO
 {
     public class khachhangDTO
     {
-        public DateTime ngaySinh
-        {
-            get { return _ngaySinh; }
-            set { _ngaySinh = value; }
-        }
+        
         public string chungMinhNhanDan
         {
             get { return _chungMinhNhanDan; }
