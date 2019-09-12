@@ -60,6 +60,10 @@ namespace quanlykhachsan
             a.Bottom();
             DataGridViewAutoSizeModeEventArgs test = new DataGridViewAutoSizeModeEventArgs();
             test.ToString();
+            frmkhachhang open = new frmkhachhang();
+            open.Visible = false;
+            open.ShowIcon = true;
+            open.RectangleToScreen = false;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

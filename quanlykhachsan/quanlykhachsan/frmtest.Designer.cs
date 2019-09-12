@@ -40,6 +40,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.WelcomeToMyHotel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,12 +170,27 @@
             this.textBox1.Text = "Quản lý khách sạn";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // WelcomeToMyHotel
+            // 
+            this.WelcomeToMyHotel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.WelcomeToMyHotel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.WelcomeToMyHotel.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.WelcomeToMyHotel.Location = new System.Drawing.Point(543, 386);
+            this.WelcomeToMyHotel.Name = "WelcomeToMyHotel";
+            this.WelcomeToMyHotel.Size = new System.Drawing.Size(290, 28);
+            this.WelcomeToMyHotel.TabIndex = 12;
+            this.WelcomeToMyHotel.Text = "WelCome and Thank you";
+            this.WelcomeToMyHotel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.WelcomeToMyHotel.UseVisualStyleBackColor = true;
+            this.WelcomeToMyHotel.UseWaitCursor = true;
+            // 
             // frmtest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::quanlykhachsan.Properties.Resources.home_badge;
             this.ClientSize = new System.Drawing.Size(846, 449);
+            this.Controls.Add(this.WelcomeToMyHotel);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
@@ -209,5 +225,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button WelcomeToMyHotel;
     }
 }
