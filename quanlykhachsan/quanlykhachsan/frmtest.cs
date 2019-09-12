@@ -61,5 +61,13 @@ namespace quanlykhachsan
             DataGridViewAutoSizeModeEventArgs test = new DataGridViewAutoSizeModeEventArgs();
             test.ToString();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox1.Visible = true;
+            comboBox1.SelectedValue.ToString("Khach hang");
+            ComboBoxStyle a = new ComboBoxStyle();
+            a.Equals.FormClosing();
+        }
     }
 }
