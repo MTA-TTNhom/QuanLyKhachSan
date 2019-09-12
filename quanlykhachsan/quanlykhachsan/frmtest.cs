@@ -49,5 +49,17 @@ namespace quanlykhachsan
             button5.Enabled = true;
             button6.UseVisualStyleBackColor.Equals();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            button6.Enabled = false;
+            button1.Visible = true;
+            button2.Visible = true;
+            dataGridView1.SelectedColumns.Contains();
+            DataGridViewAdvancedBorderStyle a = new DataGridViewAdvancedBorderStyle();
+            a.Bottom();
+            DataGridViewAutoSizeModeEventArgs test = new DataGridViewAutoSizeModeEventArgs();
+            test.ToString();
+        }
     }
 }
