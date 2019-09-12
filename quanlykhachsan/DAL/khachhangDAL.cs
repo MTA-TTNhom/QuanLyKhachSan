@@ -61,7 +61,7 @@ namespace DAL
 
         }
 
-        public void sua_khachhang1(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
+        public void sua_khachhang(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
         {
             SqlConnection cnn = ketnoi.Get();
             SqlCommand cmd = new SqlCommand("sua_khachhang", cnn);
@@ -72,67 +72,6 @@ namespace DAL
             cmd.Parameters.AddWithValue("chungMinhNhanDan", chungMinhNhanDan);
             cmd.Parameters.AddWithValue("diaChi", diaChi);
             cmd.Parameters.AddWithValue("soDienThoai", soDienThoai);
-            cmd.Parameters.AddWithValue("quocTich", quocTich);
-            cmd.Parameters.AddWithValue("maKhachHang", maKhachHang);
-
-            int i = cmd.ExecuteNonQuery();
-            cnn.Close();
-        }
-        public void sua_khachhang2(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
-        {
-            SqlConnection cnn = ketnoi.Get();
-            SqlCommand cmd = new SqlCommand("sua_khachhang", cnn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("tenKhachHang", tenKhachHang);
-            cmd.Parameters.AddWithValue("ngaySinh", ngaySinh);
-            cmd.Parameters.AddWithValue("gioiTinh", gioiTinh);
-            cmd.Parameters.AddWithValue("chungMinhNhanDan", chungMinhNhanDan);
-            cmd.Parameters.AddWithValue("diaChi", diaChi);
-            cmd.Parameters.AddWithValue("soDienThoai", soDienThoai);
-            cmd.Parameters.AddWithValue("quocTich", quocTich);
-            cmd.Parameters.AddWithValue("maKhachHang", maKhachHang);
-
-            int i = cmd.ExecuteNonQuery();
-            cnn.Close();
-        }
-        public void sua_khachhang3(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
-        {
-            SqlConnection cnn = ketnoi.Get();
-            SqlCommand cmd = new SqlCommand("sua_khachhang", cnn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("tenKhachHang", tenKhachHang);
-            cmd.Parameters.AddWithValue("chungMinhNhanDan", chungMinhNhanDan);
-            cmd.Parameters.AddWithValue("diaChi", diaChi);
-            cmd.Parameters.AddWithValue("soDienThoai", soDienThoai);
-            cmd.Parameters.AddWithValue("quocTich", quocTich);
-            cmd.Parameters.AddWithValue("maKhachHang", maKhachHang);
-
-            int i = cmd.ExecuteNonQuery();
-            cnn.Close();
-        }
-        public void sua_khachhang4(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
-        {
-            SqlConnection cnn = ketnoi.Get();
-            SqlCommand cmd = new SqlCommand("sua_khachhang", cnn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("tenKhachHang", tenKhachHang);
-            cmd.Parameters.AddWithValue("ngaySinh", ngaySinh);
-            cmd.Parameters.AddWithValue("gioiTinh", gioiTinh);
-            cmd.Parameters.AddWithValue("chungMinhNhanDan", chungMinhNhanDan);
-            
-
-            int i = cmd.ExecuteNonQuery();
-            cnn.Close();
-        }
-        public void sua_khachhang5(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
-        {
-            SqlConnection cnn = ketnoi.Get();
-            SqlCommand cmd = new SqlCommand("sua_khachhang", cnn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("tenKhachHang", tenKhachHang);
-            cmd.Parameters.AddWithValue("ngaySinh", ngaySinh);
-            cmd.Parameters.AddWithValue("gioiTinh", gioiTinh);
-           
             cmd.Parameters.AddWithValue("quocTich", quocTich);
             cmd.Parameters.AddWithValue("maKhachHang", maKhachHang);
 

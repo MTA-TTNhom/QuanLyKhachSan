@@ -34,25 +34,5 @@ namespace DTO
             get { return _donGia; }
             set { _donGia = value; }
         }
-        public string maPhong1
-        {
-            get { return _maPhong; }
-            set { _maPhong = value; }
-        }
-        public bool tinhTrang1
-        {
-            get { return _tinhTrang; }
-            set { _tinhTrang = value; }
-        }
-        public string loaiPhong1
-        {
-            get { return _loaiPhong; }
-            set { _loaiPhong = value; }
-        }
-        public float donGia1
-        {
-            get { return _donGia; }
-            set { _donGia = value; }
-        }
     }
 }
