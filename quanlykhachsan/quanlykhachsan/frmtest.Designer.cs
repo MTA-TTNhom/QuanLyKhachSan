@@ -39,6 +39,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,9 +133,9 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker1.Location = new System.Drawing.Point(237, 28);
+            this.dateTimePicker1.Location = new System.Drawing.Point(237, 364);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(399, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // dataGridView1
@@ -150,11 +151,23 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(237, 375);
+            this.comboBox1.Location = new System.Drawing.Point(237, 396);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(283, 21);
+            this.comboBox1.Size = new System.Drawing.Size(202, 21);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Aqua;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Red;
+            this.textBox1.Location = new System.Drawing.Point(237, -4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(414, 52);
+            this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "Quản lý khách sạn";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmtest
             // 
@@ -162,6 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::quanlykhachsan.Properties.Resources.home_badge;
             this.ClientSize = new System.Drawing.Size(846, 449);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
@@ -194,5 +208,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
