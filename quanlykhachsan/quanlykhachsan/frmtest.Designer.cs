@@ -41,7 +41,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.WelcomeToMyHotel = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -184,12 +186,22 @@
             this.WelcomeToMyHotel.UseVisualStyleBackColor = true;
             this.WelcomeToMyHotel.UseWaitCursor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 432);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(193, 103);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmtest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::quanlykhachsan.Properties.Resources.home_badge;
-            this.ClientSize = new System.Drawing.Size(846, 449);
+            this.ClientSize = new System.Drawing.Size(943, 569);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.WelcomeToMyHotel);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
@@ -206,6 +218,7 @@
             this.Name = "frmtest";
             this.Text = "frmtest";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +239,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button WelcomeToMyHotel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

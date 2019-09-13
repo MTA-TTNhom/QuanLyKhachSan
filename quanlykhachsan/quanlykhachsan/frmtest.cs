@@ -73,5 +73,11 @@ namespace quanlykhachsan
             ComboBoxStyle a = new ComboBoxStyle();
             a.Equals.FormClosing();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pictureBox1.Image.PropertyItems = true;
+        }
     }
 }
