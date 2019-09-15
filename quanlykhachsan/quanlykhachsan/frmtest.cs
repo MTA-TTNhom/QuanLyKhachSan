@@ -99,6 +99,16 @@ namespace quanlykhachsan
         private void button8_Click(object sender, EventArgs e)
         {
             this.Visible = true;
+            button1.Visible = false;
+            button5.Enabled = false;
+            dataGridView1.Visible = true;
+            checkBox1.VisibleChanged = true;
+            checkBox2.Width = false;
+            btnluu.Enabled = false;
+            btnhuy.Enabled = false;
+            btnsua.Enabled = true;
+            btnthem.Enabled = true;
+            btnxoa.Enabled = true;
         }
 
         private void button11_Click(object sender, EventArgs e)
