@@ -103,7 +103,14 @@ namespace quanlykhachsan
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            button1.Visible = true;
+            button2.Visible = true;
+            button3.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button6.Visible = true;
+            button10.Size.Height = 15;
+            button10.Enabled = false;
         }
     }
 }
