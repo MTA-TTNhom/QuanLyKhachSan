@@ -133,6 +133,77 @@
 
 
             // 
+            // dtgvDanhSachphong
+            // 
+            this.dtgvDanhSachphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDanhSachphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhSachphong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maPhong,
+            this.loaiPhong,
+            this.tinhTrang,
+            this.donGia});
+            this.dtgvDanhSachphong.Location = new System.Drawing.Point(3, 52);
+            this.dtgvDanhSachphong.MultiSelect = false;
+            this.dtgvDanhSachphong.Name = "dtgvDanhSachphong";
+            this.dtgvDanhSachphong.ReadOnly = true;
+            this.dtgvDanhSachphong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvDanhSachphong.Size = new System.Drawing.Size(974, 331);
+            this.dtgvDanhSachphong.TabIndex = 1;
+            // 
+            // maPhong
+            // 
+            this.maPhong.DataPropertyName = "maPhong";
+            this.maPhong.HeaderText = "Phòng";
+            this.maPhong.Name = "maPhong";
+            this.maPhong.ReadOnly = true;
+            // 
+            // loaiPhong
+            // 
+            this.loaiPhong.DataPropertyName = "loaiPhong";
+            this.loaiPhong.HeaderText = "Loại Phòng";
+            this.loaiPhong.Name = "loaiPhong";
+            this.loaiPhong.ReadOnly = true;
+            // 
+            // tinhTrang
+            // 
+            this.tinhTrang.DataPropertyName = "tinhTrang";
+            this.tinhTrang.HeaderText = "Tình trạng";
+            this.tinhTrang.Name = "tinhTrang";
+            this.tinhTrang.ReadOnly = true;
+            // 
+            // donGia
+            // 
+            this.donGia.DataPropertyName = "donGia";
+            this.donGia.HeaderText = "Đơn Giá";
+            this.donGia.Name = "donGia";
+            this.donGia.ReadOnly = true;
+            // 
+            // btndangxuat
+            // 
+            this.btndangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btndangxuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btndangxuat.Location = new System.Drawing.Point(853, 20);
+            this.btndangxuat.Name = "btndangxuat";
+            this.btndangxuat.Size = new System.Drawing.Size(109, 26);
+            this.btndangxuat.TabIndex = 2;
+            this.btndangxuat.Text = "Đăng xuất";
+            this.btndangxuat.UseVisualStyleBackColor = false;
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.Fuchsia;
+            this.label2.Location = new System.Drawing.Point(267, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(426, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "DANH SÁCH PHÒNG TRONG KHÁCH SẠN";
+            // 
+            // tpThuePhong
+            // 
+            // 
             // Tabphong
             // 
             this.Tabphong.Controls.Add(this.tpDanhSanh);
