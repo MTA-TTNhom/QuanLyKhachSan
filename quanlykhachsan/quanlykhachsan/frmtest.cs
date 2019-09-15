@@ -79,5 +79,31 @@ namespace quanlykhachsan
             this.Hide();
             pictureBox1.Image.PropertyItems = true;
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            frmmain a = new frmmain();
+            a.AddOwnedForm();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.OnFormClosing();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
