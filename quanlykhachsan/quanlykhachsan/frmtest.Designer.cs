@@ -475,7 +475,85 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
-
+            
+         this.btnthoat.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnthoat.Location = new System.Drawing.Point(267, 251);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(111, 32);
+            this.btnthoat.TabIndex = 32;
+            this.btnthoat.Text = "&Thoát";
+            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
+            // 
+            // btndangnhap
+            // 
+            this.btndangnhap.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btndangnhap.Location = new System.Drawing.Point(102, 251);
+            this.btndangnhap.Name = "btndangnhap";
+            this.btndangnhap.Size = new System.Drawing.Size(111, 32);
+            this.btndangnhap.TabIndex = 31;
+            this.btndangnhap.Text = "&Đăng nhập";
+            this.btndangnhap.UseVisualStyleBackColor = true;
+            this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
+            // 
+            // txtmatkhau
+            // 
+            this.txtmatkhau.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtmatkhau.Location = new System.Drawing.Point(190, 159);
+            this.txtmatkhau.Name = "txtmatkhau";
+            this.txtmatkhau.Size = new System.Drawing.Size(204, 29);
+            this.txtmatkhau.TabIndex = 30;
+            this.txtmatkhau.UseSystemPasswordChar = true;
+            // 
+            // txttaikhoan
+            // 
+            this.txttaikhoan.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txttaikhoan.Location = new System.Drawing.Point(190, 122);
+            this.txttaikhoan.Name = "txttaikhoan";
+            this.txttaikhoan.Size = new System.Drawing.Size(204, 29);
+            this.txttaikhoan.TabIndex = 29;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(74, 166);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 21);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Mật Khẩu :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(71, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 21);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Tài khoản :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(194, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 31);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "ĐĂNG NHẬP ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::quanlykhachsan.Properties.Resources.user_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 84);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
     }
 
     #endregion
