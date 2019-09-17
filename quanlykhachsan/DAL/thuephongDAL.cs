@@ -59,7 +59,7 @@ namespace DAL
             cnn.Close();
         }
     }
-    /*
+    
      Bai toan tinh quan ly khach san
      (1) Giá theo giờ: Nhập list giá. Tiền theo giờ không được lớn hơn số tiền theo ngày.
 Nếu không qui định. Giá sẽ áp dụng theo ngày . Ví dụ trên. Từ 3 tiếng - 12 tiếng giá 400.000. Sau 12 tiếng tính thành 1 ngày
@@ -112,6 +112,6 @@ Lưu ý: Nếu bạn vẫn vừa muốn bán giá qua đêm vừa áp dụng bá
 
 Để xây dựng chính sách giá chuyên nghiệp giúp tăng doanh thu hoặc hỗ trợ để được thiết lập giá. Vui lòng liên hệ hỗ trợ O2b để được giúp đỡ
 
-     */
+     
 }
 
