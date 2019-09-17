@@ -46,6 +46,7 @@
     <Compile Include="nhanvienDAL.cs" />
     <Compile Include="phongDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="thuephong.cs" />
     <Compile Include="thuephongDAL.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
