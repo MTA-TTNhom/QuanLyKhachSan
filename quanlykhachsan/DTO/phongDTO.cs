@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class phongDTO
+   public class phongDTO
     {
         private float _donGia;
         private string _maPhong;
