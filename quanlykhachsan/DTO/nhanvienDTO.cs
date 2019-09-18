@@ -27,5 +27,35 @@ namespace DTO
             get { return _hoTen; }
             set { _hoTen = value; }
         }
+        public bool gioiTinh
+        {
+            get { return _gioiTinh; }
+            set { _gioiTinh = value; }
+        }
+        public DateTime ngaySinh
+        {
+            get { return _ngaySinh; }
+            set { _ngaySinh = value; }
+        }
+        public string soChungMinh
+        {
+            get { return _soChungMinh; }
+            set { _soChungMinh = value; }
+        }
+        public string diaChi
+        {
+            get { return _diaChi; }
+            set { _diaChi = value; }
+        }
+        public string soDienThoai
+        {
+            get { return _soDienThoai; }
+            set { _soDienThoai = value; }
+        }
+        public DateTime ngayVaoLam
+        {
+            get { return ngayVaoLam; }
+            set { _ngayVaoLam = value; }
+        }
     }
 }
