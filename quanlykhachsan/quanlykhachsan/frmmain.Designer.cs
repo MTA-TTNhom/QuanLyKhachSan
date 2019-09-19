@@ -28,7 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-
+            this.Tabphong = new System.Windows.Forms.TabControl();
+            this.tpDanhSanh = new System.Windows.Forms.TabPage();
+            this.dtgvDanhSachphong = new System.Windows.Forms.DataGridView();
+            this.maPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btndangxuat = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tpThuePhong = new System.Windows.Forms.TabPage();
+            this.bHuyBo = new System.Windows.Forms.Button();
+            this.btThuePhongOK = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dgkhachhang = new System.Windows.Forms.DataGridView();
+            this.maKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chungMinhNhanDan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quocTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtmakhtp = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBDatPhong = new System.Windows.Forms.GroupBox();
+            this.dtngaydattruoc = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtphongdt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBDatPhongTruoc = new System.Windows.Forms.CheckBox();
+            this.txtPhongtp = new System.Windows.Forms.TextBox();
+            this.dtTuNgaytp = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tpTimKiem = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dtgvTimKiem = new System.Windows.Forms.DataGridView();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.TKTheoDiaChi = new System.Windows.Forms.TextBox();
+            this.cbTheoDiaChi = new System.Windows.Forms.CheckBox();
             this.TKTheoSoDT = new System.Windows.Forms.TextBox();
             this.cbTheoDT = new System.Windows.Forms.CheckBox();
             this.btTimKiem = new System.Windows.Forms.Button();
@@ -60,7 +101,19 @@
             this.label24 = new System.Windows.Forms.Label();
             this.txtTPPhong = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-    
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtTPTenKH = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtTPSoCMND = new System.Windows.Forms.TextBox();
+            this.txtTPSoDT = new System.Windows.Forms.TextBox();
+            this.txtTPDiaChi = new System.Windows.Forms.TextBox();
+            this.TPTinhTien = new System.Windows.Forms.Button();
+            this.Tabphong.SuspendLayout();
+            this.tpDanhSanh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachphong)).BeginInit();
             this.tpThuePhong.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -923,6 +976,7 @@
             this.Controls.Add(this.Tabphong);
             this.Name = "frmmain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_load);
             this.Tabphong.ResumeLayout(false);
             this.tpDanhSanh.ResumeLayout(false);
             this.tpDanhSanh.PerformLayout();
