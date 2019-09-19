@@ -142,6 +142,7 @@
             this.btnthemphong.TabIndex = 47;
             this.btnthemphong.Text = "Thêm";
             this.btnthemphong.UseVisualStyleBackColor = true;
+            this.btnthemphong.Click += new System.EventHandler(this.btnthemphong_Click);
             // 
             // btnsuaphong
             // 
@@ -210,7 +211,7 @@
             this.GridView.ReadOnly = true;
             this.GridView.Size = new System.Drawing.Size(772, 177);
             this.GridView.TabIndex = 53;
-            
+            this.GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // maPhong
             // 
@@ -262,9 +263,11 @@
             this.Controls.Add(this.label5);
             this.Name = "frmthongtinphong";
             this.Text = "frmthongtinphong";
+            this.Load += new System.EventHandler(this.frm_load);
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
