@@ -80,7 +80,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(760, 177);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-
+            // 
+            // maKhachHang
+            // 
+            this.maKhachHang.DataPropertyName = "maKhachHang";
+            this.maKhachHang.HeaderText = "Mã khách hàng";
+            this.maKhachHang.Name = "maKhachHang";
+            this.maKhachHang.ReadOnly = true;
+            // 
+            // tenKhachHang
+            // 
+            this.tenKhachHang.DataPropertyName = "tenKhachHang";
+            this.tenKhachHang.HeaderText = "Tên khách hàng";
+            this.tenKhachHang.Name = "tenKhachHang";
+            this.tenKhachHang.ReadOnly = true;
         }
 
         #endregion
