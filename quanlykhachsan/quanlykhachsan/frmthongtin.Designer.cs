@@ -94,6 +94,34 @@
             this.tenKhachHang.HeaderText = "Tên khách hàng";
             this.tenKhachHang.Name = "tenKhachHang";
             this.tenKhachHang.ReadOnly = true;
+            // 
+            // ngaySinh
+            // 
+            this.ngaySinh.DataPropertyName = "ngaySinh";
+            this.ngaySinh.HeaderText = "Ngày sinh";
+            this.ngaySinh.Name = "ngaySinh";
+            this.ngaySinh.ReadOnly = true;
+            // 
+            // gioiTinh
+            // 
+            this.gioiTinh.DataPropertyName = "gioiTinh";
+            this.gioiTinh.HeaderText = "Giới tính";
+            this.gioiTinh.Name = "gioiTinh";
+            this.gioiTinh.ReadOnly = true;
+            // 
+            // chungMinhNhanDan
+            // 
+            this.chungMinhNhanDan.DataPropertyName = "chungMinhNhanDan";
+            this.chungMinhNhanDan.HeaderText = "Chứng minh thư";
+            this.chungMinhNhanDan.Name = "chungMinhNhanDan";
+            this.chungMinhNhanDan.ReadOnly = true;
+            // 
+            // soDienThoai
+            // 
+            this.soDienThoai.DataPropertyName = "soDienThoai";
+            this.soDienThoai.HeaderText = "Số điện thoại";
+            this.soDienThoai.Name = "soDienThoai";
+            this.soDienThoai.ReadOnly = true;
         }
 
         #endregion
