@@ -206,6 +206,57 @@
             this.label8.Size = new System.Drawing.Size(58, 19);
             this.label8.TabIndex = 5;
             this.label8.Text = "Địa chỉ :";
+            // 
+            // btnsua
+            // 
+            this.btnsua.Location = new System.Drawing.Point(231, 438);
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(78, 37);
+            this.btnsua.TabIndex = 8;
+            this.btnsua.Text = "&Sửa";
+            this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Location = new System.Drawing.Point(344, 438);
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(78, 37);
+            this.btnxoa.TabIndex = 9;
+            this.btnxoa.Text = "&Xóa";
+            this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // btnluu
+            // 
+            this.btnluu.Location = new System.Drawing.Point(460, 438);
+            this.btnluu.Name = "btnluu";
+            this.btnluu.Size = new System.Drawing.Size(78, 37);
+            this.btnluu.TabIndex = 10;
+            this.btnluu.Text = "&Lưu";
+            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Location = new System.Drawing.Point(579, 438);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(78, 37);
+            this.btnthoat.TabIndex = 11;
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(216, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(367, 31);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "THÔNG TIN KHÁCH HÀNG";
         }
 
         #endregion
