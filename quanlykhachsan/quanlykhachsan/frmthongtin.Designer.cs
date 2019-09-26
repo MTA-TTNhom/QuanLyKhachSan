@@ -257,6 +257,138 @@
             this.label5.Size = new System.Drawing.Size(367, 31);
             this.label5.TabIndex = 12;
             this.label5.Text = "THÔNG TIN KHÁCH HÀNG";
+            // 
+            // txtmakhachhang
+            // 
+            this.txtmakhachhang.Enabled = false;
+            this.txtmakhachhang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtmakhachhang.Location = new System.Drawing.Point(210, 260);
+            this.txtmakhachhang.Name = "txtmakhachhang";
+            this.txtmakhachhang.Size = new System.Drawing.Size(159, 26);
+            this.txtmakhachhang.TabIndex = 13;
+            // 
+            // txttenkh
+            // 
+            this.txttenkh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txttenkh.Location = new System.Drawing.Point(210, 308);
+            this.txttenkh.Name = "txttenkh";
+            this.txttenkh.Size = new System.Drawing.Size(159, 26);
+            this.txttenkh.TabIndex = 14;
+            // 
+            // txtcmt
+            // 
+            this.txtcmt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtcmt.Location = new System.Drawing.Point(559, 260);
+            this.txtcmt.Name = "txtcmt";
+            this.txtcmt.Size = new System.Drawing.Size(159, 26);
+            this.txtcmt.TabIndex = 16;
+            // 
+            // txtsdt
+            // 
+            this.txtsdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtsdt.Location = new System.Drawing.Point(559, 345);
+            this.txtsdt.Name = "txtsdt";
+            this.txtsdt.Size = new System.Drawing.Size(159, 26);
+            this.txtsdt.TabIndex = 18;
+            // 
+            // txtdiachi
+            // 
+            this.txtdiachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtdiachi.Location = new System.Drawing.Point(559, 308);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Size = new System.Drawing.Size(159, 26);
+            this.txtdiachi.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(76, 387);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(76, 19);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Ngày sinh :";
+            // 
+            // cbgiotinhkh
+            // 
+            this.cbgiotinhkh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbgiotinhkh.FormattingEnabled = true;
+            this.cbgiotinhkh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cbgiotinhkh.Location = new System.Drawing.Point(210, 345);
+            this.cbgiotinhkh.Name = "cbgiotinhkh";
+            this.cbgiotinhkh.Size = new System.Drawing.Size(158, 27);
+            this.cbgiotinhkh.TabIndex = 24;
+            // 
+            // dtngaysinh
+            // 
+            this.dtngaysinh.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dtngaysinh.CustomFormat = "dd/MM/yyyy";
+            this.dtngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtngaysinh.Location = new System.Drawing.Point(210, 385);
+            this.dtngaysinh.Name = "dtngaysinh";
+            this.dtngaysinh.Size = new System.Drawing.Size(159, 20);
+            this.dtngaysinh.TabIndex = 25;
+            this.dtngaysinh.TabStop = false;
+            // 
+            // cbquoctich
+            // 
+            this.cbquoctich.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbquoctich.FormattingEnabled = true;
+            this.cbquoctich.Items.AddRange(new object[] {
+            "VIỆT NAM",
+            "LÀO",
+            "THÁI LAN"});
+            this.cbquoctich.Location = new System.Drawing.Point(559, 387);
+            this.cbquoctich.Name = "cbquoctich";
+            this.cbquoctich.Size = new System.Drawing.Size(158, 27);
+            this.cbquoctich.TabIndex = 26;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(118, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 37);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "&Thêm";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // frmkhachhang
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(799, 504);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cbquoctich);
+            this.Controls.Add(this.dtngaysinh);
+            this.Controls.Add(this.cbgiotinhkh);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtsdt);
+            this.Controls.Add(this.txtdiachi);
+            this.Controls.Add(this.txtcmt);
+            this.Controls.Add(this.txttenkh);
+            this.Controls.Add(this.txtmakhachhang);
+            this.Controls.Add(this.btnthoat);
+            this.Controls.Add(this.btnluu);
+            this.Controls.Add(this.btnxoa);
+            this.Controls.Add(this.btnsua);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label5);
+            this.Name = "frmkhachhang";
+            this.Text = "Quản lý khách hàng";
+            this.Load += new System.EventHandler(this.frm_load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
