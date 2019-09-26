@@ -392,5 +392,36 @@
         }
 
         #endregion
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnsua;
+        private System.Windows.Forms.Button btnxoa;
+        private System.Windows.Forms.Button btnluu;
+        private System.Windows.Forms.Button btnthoat;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtmakhachhang;
+        private System.Windows.Forms.TextBox txttenkh;
+        private System.Windows.Forms.TextBox txtcmt;
+        private System.Windows.Forms.TextBox txtsdt;
+        private System.Windows.Forms.TextBox txtdiachi;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbgiotinhkh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chungMinhNhanDan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quocTich;
+        private System.Windows.Forms.DateTimePicker dtngaysinh;
+        private System.Windows.Forms.ComboBox cbquoctich;
+        private System.Windows.Forms.Button button1;
     }
 }
