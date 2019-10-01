@@ -25,30 +25,6 @@ namespace DAL
             cnn.Close();
             return dt;
         }
-		
-		{
-            SqlConnection cnn = ketnoi.Get();
-            SqlCommand cmd = new SqlCommand("them_nhanvien", cnn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("hoTen", hoTen);
-            cmd.Parameters.AddWithValue("gioiTinh", gioiTinh);
-            cmd.Parameters.AddWithValue("ngaySinh", ngaySinh);
-            cmd.Parameters.AddWithValue("soChungMinh", soChungMinh);
-            cmd.Parameters.AddWithValue("diaChi", diaChi);
-            cmd.Parameters.AddWithValue("soDienThoai", soDienThoai);
-            cmd.Parameters.AddWithValue("ngayVaoLam", ngayVaoLam);
-
-            int i = cmd.ExecuteNonQuery();
-            cnn.Close();
-            if (i != 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
         public bool them_khachhang(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich)
         {
             SqlConnection cnn = ketnoi.Get();
@@ -73,7 +49,7 @@ namespace DAL
                 return false;
             }
         }
-        public void xoa_nhanvien(int maKhachHang)
+                public void xoa_nhanvien(int maKhachHang)
         {
 
             SqlConnection cnn = ketnoi.Get();
@@ -85,7 +61,7 @@ namespace DAL
 
         }
 
-        public void sua_khachhang(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich, int maKhachHang)
+        public void sua_khachhang(string tenKhachHang, DateTime ngaySinh, bool gioiTinh, string chungMinhNhanDan, string diaChi, string soDienThoai, string quocTich,int maKhachHang)
         {
             SqlConnection cnn = ketnoi.Get();
             SqlCommand cmd = new SqlCommand("sua_khachhang", cnn);
@@ -105,4 +81,3 @@ namespace DAL
 
     }
 }
-

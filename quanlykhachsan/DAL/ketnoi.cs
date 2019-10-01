@@ -12,9 +12,9 @@ namespace DAL
         public static SqlConnection Get()
         {
             SqlConnection cnn = new SqlConnection();
-            cnn.ConnectionString = @"Data Source=THANH-HOANG-THU;Initial Catalog=quanlykhachsan;Integrated Security=True";
+            cnn.ConnectionString = @"Data Source=HOANG-THUY-THAN;Initial Catalog=quanlykhachsan;Integrated Security=True";
             cnn.Open();
             return cnn;
         }
-    }
+   }
 }

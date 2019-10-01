@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class thuephongDAL
+   public class thuephongDAL
     {
         public bool them_thuephong(int maKhachHang, DateTime ngayDen, int maPhong)
         {
@@ -46,7 +46,7 @@ namespace DAL
             cnn.Close();
             return dt;
         }
-        public void tinhtien(DateTime ngayDi, float thanhTien, int maThuePhong, int maPhong)
+        public void tinhtien( DateTime ngayDi, float thanhTien, int maThuePhong, int maPhong)
         {
             SqlConnection cnn = ketnoi.Get();
             SqlCommand cmd = new SqlCommand("tinhtien ", cnn);
@@ -59,8 +59,5 @@ namespace DAL
             cnn.Close();
         }
     }
-    
-     
-     
 }
 
