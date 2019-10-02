@@ -22,7 +22,7 @@ namespace quanlykhachsan
         private void btndangnhap_Click(object sender, EventArgs e)
         {
 
-            SqlConnection con = new SqlConnection(@"Data Source=THANH-HOANG-THU;Initial Catalog=quanlykhachsan;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=HOANG-THUY-THAN;Initial Catalog=quanlykhachsan;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From [dbo].[nguoidung] where taiKhoan = '" + txttaikhoan.Text + "' and matKhau = '" + txtmatkhau.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
