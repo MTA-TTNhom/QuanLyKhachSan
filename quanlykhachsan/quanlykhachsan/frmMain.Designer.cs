@@ -562,6 +562,7 @@
             this.cbTheoDiaChi.TabIndex = 15;
             this.cbTheoDiaChi.Text = "Theo Địa Chị :";
             this.cbTheoDiaChi.UseVisualStyleBackColor = true;
+            this.cbTheoDiaChi.CheckedChanged += new System.EventHandler(this.cbTheoDiaChi_CheckedChanged);
             // 
             // TKTheoSoDT
             // 
@@ -579,6 +580,7 @@
             this.cbTheoDT.TabIndex = 13;
             this.cbTheoDT.Text = "Theo số ĐT :";
             this.cbTheoDT.UseVisualStyleBackColor = true;
+            this.cbTheoDT.CheckedChanged += new System.EventHandler(this.cbTheoDT_CheckedChanged);
             // 
             // btTimKiem
             // 
@@ -588,6 +590,7 @@
             this.btTimKiem.TabIndex = 12;
             this.btTimKiem.Text = "Tìm Kiếm";
             this.btTimKiem.UseVisualStyleBackColor = true;
+            this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
             // 
             // TKTheoCMND
             // 
@@ -606,6 +609,7 @@
             this.cbTheoCMND.TabIndex = 10;
             this.cbTheoCMND.Text = "Theo CMND";
             this.cbTheoCMND.UseVisualStyleBackColor = true;
+            this.cbTheoCMND.CheckedChanged += new System.EventHandler(this.cbTheoCMND_CheckedChanged);
             // 
             // TKTheoMa
             // 
@@ -624,6 +628,7 @@
             this.cbTheoMaKH.TabIndex = 8;
             this.cbTheoMaKH.Text = "Theo mã KH";
             this.cbTheoMaKH.UseVisualStyleBackColor = true;
+            this.cbTheoMaKH.CheckedChanged += new System.EventHandler(this.cbTheoMaKH_CheckedChanged);
             // 
             // TKDenNgay
             // 
@@ -682,6 +687,7 @@
             this.cbThoiGian.TabIndex = 2;
             this.cbThoiGian.Text = "Thời gian ở ";
             this.cbThoiGian.UseVisualStyleBackColor = true;
+            this.cbThoiGian.CheckedChanged += new System.EventHandler(this.cbThoiGian_CheckedChanged);
             // 
             // cbTheoTen
             // 
@@ -692,6 +698,7 @@
             this.cbTheoTen.TabIndex = 1;
             this.cbTheoTen.Text = "Theo Tên ";
             this.cbTheoTen.UseVisualStyleBackColor = true;
+            this.cbTheoTen.CheckedChanged += new System.EventHandler(this.cbTheoTen_CheckedChanged);
             // 
             // cbTheoPhong
             // 
@@ -702,6 +709,7 @@
             this.cbTheoPhong.TabIndex = 0;
             this.cbTheoPhong.Text = "Theo phòng";
             this.cbTheoPhong.UseVisualStyleBackColor = true;
+            this.cbTheoPhong.CheckedChanged += new System.EventHandler(this.cbTheoPhong_CheckedChanged);
             // 
             // tpTraPhong
             // 

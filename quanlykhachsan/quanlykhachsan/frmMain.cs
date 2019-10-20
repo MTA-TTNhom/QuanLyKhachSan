@@ -7,17 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace quanlykhachsan
 {
-    public partial class frmMain : Form
+    public partial class frmmain : Form
     {
         public frmmain()
         {
             InitializeComponent();
         }
-
-
+ 
+        
         private void hienthikhachhang()
         {
             khachhangBLL pbll = new khachhangBLL();
@@ -35,14 +36,14 @@ namespace quanlykhachsan
         }
         private void trangthai(bool t)
         {
-            txtPhongtp.Enabled = t;
+            txtPhongtp.Enabled =t;
             dtTuNgaytp.Enabled = t;
             txtphongdt.Enabled = !t;
             dtngaydattruoc.Enabled = !t;
         }
         private void frm_load(object sender, EventArgs e)
         {
-
+         
             hienthiphong();
             hienthikhachhang();
             dtTuNgaytp.Value = DateTime.Now;
@@ -103,7 +104,7 @@ namespace quanlykhachsan
             txtmathuephong.Text = row.Cells["donGia"].Value.ToString();
             dtngaysinh.Value = Convert.ToDateTime(row.Cells["ngaySinh"].Value.ToString());
             dttpngaybatdauthue.Value = Convert.ToDateTime(row.Cells["ngayDen"].Value.ToString());
-
+           
         }
         private void thanhtoan()
         {
@@ -120,11 +121,50 @@ namespace quanlykhachsan
         private void TPTinhTien_Click(object sender, EventArgs e)
         {
             thanhtoan();
-            // thuephongBLL tpBLL = new thuephongBLL();
-            //   tpBLL.tinhtien(dttpngayketthucthue.Value, float.Parse(txttongtien.Text.Trim()),int.Parse(txtmathuephong.Text.Trim()),int.Parse(txtTPPhong.Text.Trim()));
+           // thuephongBLL tpBLL = new thuephongBLL();
+         //   tpBLL.tinhtien(dttpngayketthucthue.Value, float.Parse(txttongtien.Text.Trim()),int.Parse(txtmathuephong.Text.Trim()),int.Parse(txtTPPhong.Text.Trim()));
             hienthitraphong();
-            MessageBox.Show("Số tiền phải trả là : " + txttongtien.Text, "Tổng tiền");
+            MessageBox.Show("Số tiền phải trả là : "+txttongtien.Text,"Tổng tiền");  
+        }
+
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTheoPhong_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTheoTen_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbThoiGian_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTheoDT_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTheoMaKH_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTheoCMND_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTheoDiaChi_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
-}
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace quanlykhachsan
 {
@@ -33,5 +34,7 @@ namespace quanlykhachsan
             this.Hide();
             frmdangnhap frm = new frmdangnhap();
             frm.Show();
+
         }
     }
+}

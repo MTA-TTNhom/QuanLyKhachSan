@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01A155A5-9F66-4260-BFAD-37A167751B96}</ProjectGuid>
+    <ProjectGuid>{9F2A8ECA-4980-4AD2-B222-E965D02071B1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>quanlykhachsan</RootNamespace>
@@ -70,17 +70,23 @@
     <Compile Include="frmdangnhap.Designer.cs">
       <DependentUpon>frmdangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkhachhang.Designer.cs">
+      <DependentUpon>frmkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmnhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmnhanvien.Designer.cs">
       <DependentUpon>frmnhanvien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmtest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmtest.Designer.cs">
-      <DependentUpon>frmtest.cs</DependentUpon>
     </Compile>
     <Compile Include="frmthongtinphong.cs">
       <SubType>Form</SubType>
@@ -108,8 +114,20 @@
     <EmbeddedResource Include="frmdangnhap.resx">
       <DependentUpon>frmdangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmtest.resx">
-      <DependentUpon>frmtest.cs</DependentUpon>
+    <EmbeddedResource Include="frmkhachhang.resx">
+      <DependentUpon>frmkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnhanvien.resx">
+      <DependentUpon>frmnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthongtinphong.resx">
+      <DependentUpon>frmthongtinphong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthongtinpphongkh.resx">
+      <DependentUpon>frmthongtinpphongkh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,9 +171,6 @@
       <Project>{230c9e97-76f0-4775-9a6f-041e824d0a91}</Project>
       <Name>DTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\home_badge.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DTO;
 
 namespace quanlykhachsan
 {
@@ -24,6 +26,7 @@ namespace quanlykhachsan
         }
         private void trangthai(bool t)
         {
+          //  txtmanv.Enabled = t;
             txttennv.Enabled = t;
             txtscm.Enabled = t;
             txtsdt.Enabled = t;
@@ -31,15 +34,19 @@ namespace quanlykhachsan
             dtngaysinh.Enabled = t;
             dtngayvaolam.Enabled = t;
             cbgioitinh.Enabled = t;
+
         }
+
         private void frm_load(object sender, EventArgs e)
         {
+            //hienthi();
             nhanvienBLL pbll = new nhanvienBLL();
             dataGridView1.DataSource = pbll.hienthinhanvien();
             trangthai(false);
             btnluu.Enabled = false;
             btnhuy.Enabled = false;
         }
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = new DataGridViewRow();
@@ -53,6 +60,7 @@ namespace quanlykhachsan
             dtngaysinh.Value = Convert.ToDateTime(row.Cells["ngaySinh"].Value.ToString());
             dtngayvaolam.Value = Convert.ToDateTime(row.Cells["ngayVaoLam"].Value.ToString());
         }
+
         private void btnthem_Click(object sender, EventArgs e)
         {
             trangthai(true);
@@ -84,12 +92,12 @@ namespace quanlykhachsan
             if (cbgioitinh.Text == "Nam")
                 return true;
             else
-                return false;
+                return false;   
         }
         private void btnluu_Click(object sender, EventArgs e)
         {
             trangthai(false);
-            if (temp == 1)
+            if(temp==1)
             {
                 nhanvienBLL nvBLL = new nhanvienBLL();
                 nvBLL.them_nhanvien(txttennv.Text, travegioitinh(), dtngaysinh.Value, txtscm.Text, txtdiachi.Text, txtsdt.Text, dtngayvaolam.Value);
@@ -98,7 +106,7 @@ namespace quanlykhachsan
             else
             {
                 nhanvienBLL nvBLL = new nhanvienBLL();
-                nvBLL.sua_nhanvien(txttennv.Text, travegioitinh(), dtngaysinh.Value, txtscm.Text, txtdiachi.Text, txtsdt.Text, dtngayvaolam.Value, int.Parse(txtmanv.Text));
+                nvBLL.sua_nhanvien(txttennv.Text, travegioitinh(), dtngaysinh.Value, txtscm.Text, txtdiachi.Text, txtsdt.Text, dtngayvaolam.Value,int.Parse(txtmanv.Text));
                 hienthi();
             }
             btnluu.Enabled = false;
@@ -112,6 +120,7 @@ namespace quanlykhachsan
         {
             Close();
         }
+
         private void btnxoa_Click(object sender, EventArgs e)
         {
             nhanvienBLL nvBLL = new nhanvienBLL();

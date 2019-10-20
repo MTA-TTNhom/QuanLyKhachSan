@@ -19,6 +19,7 @@
             }
             base.Dispose(disposing);
         }
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -433,6 +434,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayVaoLam;
-
     }
 }

@@ -45,7 +45,7 @@ namespace quanlykhachsan
                 frm.Show();
 
             }
-
+           
         }
         private void trangthai( bool t)
         {
