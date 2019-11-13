@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BLL;
 
 namespace quanlykhachsan
 {
@@ -25,7 +24,7 @@ namespace quanlykhachsan
         }
         private void trangthai(bool t)
         {
-           // txtmakhachhang.Enabled = t;
+            // txtmakhachhang.Enabled = t;
             txttenkh.Enabled = t;
             txtcmt.Enabled = t;
             txtsdt.Enabled = t;
@@ -71,18 +70,18 @@ namespace quanlykhachsan
         private void btnxoa_Click(object sender, EventArgs e)
         {
             khachhangBLL khBLL = new khachhangBLL();
-           DialogResult luu= MessageBox.Show("Bạn chắc chắn xóa??", "Thông báo thêm mới", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if(luu==DialogResult.Yes)
+            DialogResult luu = MessageBox.Show("Bạn chắc chắn xóa??", "Thông báo thêm mới", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (luu == DialogResult.Yes)
             {
-                
-               khBLL.xoa_khachhang(int.Parse(txtmakhachhang.Text));
-              hienthi();
+
+                khBLL.xoa_khachhang(int.Parse(txtmakhachhang.Text));
+                hienthi();
             }
         }
 
         private void btnluu_Click(object sender, EventArgs e)
         {
-                khachhangBLL khBLL = new khachhangBLL(); 
+            khachhangBLL khBLL = new khachhangBLL();
             if (temp == 2)
             {
                 khBLL.sua_khachhang(txttenkh.Text, dtngaysinh.Value, travegioitinh(), txtcmt.Text, txtdiachi.Text, txtsdt.Text, cbquoctich.Text, int.Parse(txtmakhachhang.Text));
@@ -107,4 +106,5 @@ namespace quanlykhachsan
             trangthai(true);
         }
     }
+}
 }
